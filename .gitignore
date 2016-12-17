@@ -1,15 +1,23 @@
 #include <iostream>
-	int fib(int n)
-	{
-	    if(n < 3)
-	        return 1;
-	    return fib(n - 2) + fib(n - 1);
-	} 
+	using namespace std;
 	int main()
 	{
-	    int n = 0;
-	    std::cout << "Enter find number:\n> ";
-	    std::cin  >> n;
-	    std::cout << "Result: " << fib(n) << " is the " << n << "th Fibonacci Number.\n";
-	    return 0;
-	}
+		const int arraySize = 10;
+		int a[arraySize];
+		cout<<"Vvedite massive iz 10 elementov. \n";
+		for (int j=0; j< arraySize; j++)
+		{
+			cout<<"a["<<j<<"]=";
+			cin>>a[j];
+		}
+			int sum=0;
+			for(int j=0; j<arraySize; j++)
+			{
+				if (a[j]!=a[10])
+				{			
+					sum+=a[j];
+				}
+			}
+		cout<<"otvet =" << sum<<'\n';
+		system("pause");
+	} 
